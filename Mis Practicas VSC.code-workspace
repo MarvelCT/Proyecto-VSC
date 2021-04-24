@@ -2,6 +2,10 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"name": "DiseWebVSC",
+			"path": "..\\DiseWebVSC"
 		}
 	]
 }
