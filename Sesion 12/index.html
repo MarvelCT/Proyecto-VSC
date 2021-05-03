@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Cinematografica</title>
+    <link rel="icon" href="img/marvel.ico">
+</head>
+<body>
+    <div id="contenedor">
+        <h2>Encuesta de Cine: Nominados al Oscar 2021</h2>
+        <form id="formulario1" name ="formulario1" method ="post" action="data.php">
+        <fieldset id="Datos Personales">
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombre</label> &nbsp&nbsp&nbsp&nbsp
+            <input type="text" name="nombre" id="nombre"><br>
+            <label for="apellido">Apellido</label> &nbsp&nbsp&nbsp
+            <input type="text" name="apellido" id="apellido"><br>
+            <label for="dni">DNI</label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type="text" name="dni" id="dni" maxlength="9"><br>
+            <label for="edad">Edad</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type="text" name="edad" id="edad" size="2" maxlength="2"><br>
+            <label for="sexo">Sexo</label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <select name="sexo" id="">    
+                <option>Masculino</option>
+                <option>Femenino</option>
+            </select>
+        </fieldset>
+        <fieldset id="Mejor Pelicula">
+            <legend>Mejor Pelicula</legend>
+            <input type="radio" name="pelicula" value="11">Call Me By Your Name <br>
+            <input type="radio" name="pelicula" value="22">Dunkerque <br>
+            <input type="radio" name="pelicula" value="33">Dejame Salir <br>
+        </fieldset>
+        <fieldset id="pelicula no vista">
+            <legend>Selecciona la Pelicula que no hayas visto</legend>
+            <input type="checkbox" name="pelicula" value="11">Non Scape <br>
+            <input type="checkbox" name="pelicula" value="11">Ninja Turtles <br>
+            <input type="checkbox" name="pelicula" value="11">Ghost Rider <br>
+            <input type="checkbox" name="pelicula" value="11">Transformers The last King <br>
+            <input type="checkbox" name="pelicula" value="11">Minions<br>
+        </fieldset>
+        <fieldset id="grupo_argumento">
+            <legend>Argumento de tu pelicula favorita</legend>
+            <textarea name="argumento" id="argumento" cols="200" rows="14"></textarea>
+        </fieldset>
+        <br>
+        <input type="reset" value="Borrar Formulario">
+        <input type="submit" value="Enviar">
+    </form> 
+    </div>
+</body>
+</html>
